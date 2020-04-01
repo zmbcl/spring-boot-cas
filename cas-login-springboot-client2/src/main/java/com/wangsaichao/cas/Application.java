@@ -1,6 +1,7 @@
 package com.wangsaichao.cas;
 
-import net.unicon.cas.client.configuration.EnableCasClient;
+//import net.unicon.cas.client.configuration.EnableCasClient;
+import priv.wangsaichao.cas.client.configuration.EnableCasClient;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;

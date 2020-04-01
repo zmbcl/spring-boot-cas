@@ -54,17 +54,24 @@
             <artifactId>druid</artifactId>
             <version>1.0.28</version>
         </dependency>
-        <!--cas的客户端 -->
+        <!--cas的客户端
+         整合单点登出的时候,发现多个客户端无法实现单点登出,so替换为自定义的starter；cas-client-spring-boot-starter
+         -->
+<!--        <dependency>-->
+<!--            <groupId>net.unicon.cas</groupId>-->
+<!--            <artifactId>cas-client-autoconfig-support</artifactId>-->
+<!--            <version>1.4.0-GA</version>-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>org.jasig.cas.client</groupId>-->
+<!--                    <artifactId>cas-client-core</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>net.unicon.cas</groupId>
-            <artifactId>cas-client-autoconfig-support</artifactId>
-            <version>1.4.0-GA</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.jasig.cas.client</groupId>
-                    <artifactId>cas-client-core</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>priv.wangsaichao.cas</groupId>
+            <artifactId>cas-client-spring-boot-starter</artifactId>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>org.jasig.cas.client</groupId>
