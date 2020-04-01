@@ -4,7 +4,7 @@
     <groupId>iamlabs.unicon.net</groupId>
     <artifactId>cas-login-springboot-client2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>cas-login-springboot-client2</name>
     <description>A sample web application that exercises the CAS protocol features via the Java CAS Client.</description>
   
@@ -46,6 +46,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.11</version>
         </dependency>
         <!--连接池  -->
         <dependency>
