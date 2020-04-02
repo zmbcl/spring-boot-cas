@@ -18,6 +18,8 @@
 <h1>当前为客户端2</h1>
 <h2><a href="http://app1.cas.com:8081/">客户端1</a></h2>
 <h2><a href="http://app2.cas.com:8082/">客户端2</a></h2>
+<a href="<%=request.getContextPath() %>/logout1" title="Click here to log out">退出系统（方式1:跳转到默认页）</a>
+<a href="<%=request.getContextPath() %>/logout2" title="Click here to log out">退出系统（方式2:跳转到指定页）</a>
 <p>A sample web application that exercises the CAS protocol features via the Java CAS Client.</p>
 <hr>
 
