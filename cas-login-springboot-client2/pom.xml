@@ -107,5 +107,22 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+<!--        Springboot项目直接运行前端jsp页面无法访问配置resources-->
+        <resources>
+            <resource>
+                <!--打包成jar静态资源必须指明路径，打包成war可以不用-->
+                <directory>${basedir}/src/main/webapp</directory>
+                <targetPath>META-INF/resources</targetPath>
+                <includes>
+                    <include>**/**</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/**</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
 </project>
